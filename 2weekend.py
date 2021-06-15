@@ -1,9 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['font.family'] = 'Malgun Gothic' #폰트설정
 
-population = pd.read_csv('D:/project/untitled1/population04.csv')
+population = pd.read_csv('D:/project/untitled1/population04.csv') #csv파일
 population2 = pd.read_csv('D:/project/untitled1/population07.csv')
 
 city = population.groupby('군구')['유동인구수'].sum().sort_values(ascending=True)
