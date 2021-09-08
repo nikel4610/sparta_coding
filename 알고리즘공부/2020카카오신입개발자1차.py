@@ -10,7 +10,7 @@ def string_compression(string):
         #splited = []
         #for i in range(0, n, split_size):
         #    splited.append(string[i:i + split_size])]
-        splited = [string[i:i + split_size] for i in range(1, n//2 + 1)]
+        splited = [string[i:i + split_size] for i in range(0, n, split_size)]
         compressed = ""
         count = 1
 
@@ -33,4 +33,4 @@ def string_compression(string):
 
     return min(compresseion_length_array)
 
-print(string_compression(input))  
+print(string_compression(input))
